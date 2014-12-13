@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Udacity RI: icon font</title>
+  <style>
+    @import url(http://weloveiconfonts.com/api/?family=zocial);
+
+    [class*="zocial-"]:before {
+      display: inline-block;
+      font-family: 'zocial', sans-serif;
+      text-shadow: 3px 3px 3px #aaa;
+      width: 20vw;
+    }
+
+    body {
+      font-family: 'Roboto Condensed';
+      margin: 20vh 0;
+    }
+
+    li {
+      font-size: 10vw;
+      list-style: none;
+      margin: 3vw 0;
+      padding-left: 100px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <li class="zocial-twitter">Twitter</li>
+  <li class="zocial-flickr">Flickr</li>
+  <li class="zocial-lastfm">Last.fm</li>
+  <li class="zocial-reddit">Reddit</li>
+
+</body>
+
+</html>
