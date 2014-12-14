@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Udacity RI: image-set()</title>
+
+  <style>
+    body {
+      align-items: center;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+    }
+
+    div {
+      background-image: url(../../../images/icon1x.png);
+      background-image: -webkit-image-set(url(../../../images/icon1x.png) 1x,
+        url(../../../images/icon2x.png) 2x);
+      background-image: image-set(url(../../../images/icon1x.png) 1x,
+        url(../../../images/icon2x.png) 2x);
+      height: 128px;
+      width: 128px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div></div>
+
+</body>
+
+</html>
