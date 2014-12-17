@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Udacity RI: srcset w values</title>
+
+  <style>
+    body {
+      align-items: center;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+    }
+    img {
+      width: 50vw;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <img src="small.jpg" srcset="small.jpg 500w, medium.jpg 1000w, large.jpg 1500w"  sizes="(min-width: 500px) 700px, 100vw" alt="Wallaby" />
+
+</body>
+
+</html>
