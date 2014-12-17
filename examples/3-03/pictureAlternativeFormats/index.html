@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Udacity RI: picture element with alternative sources</title>
+
+  <style>
+    body {
+      margin: 0
+    }
+    img {
+      width: 100vw;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <picture>
+    <source srcset="kittens.webp" type="image/webp">
+    <source srcset="kittens.jpeg" type="image/jpeg">
+    <img src="kittens.jpg" alt="Two grey tabby kittens">
+  </picture>
+
+  </body>
+
+  </html>
