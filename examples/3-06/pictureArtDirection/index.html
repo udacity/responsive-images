@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Udacity RI: picture element art direction</title>
+
+  <style>
+    body {
+      align-items: center;
+      display: flex;
+      font-family: Roboto condensed;
+      height: 100vh;
+      justify-content: center;
+      margin: 0;
+    }
+    img {
+      max-width: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <picture>
+    <source media="(min-width: 650px)" srcset="kitten-large.png">
+    <source media="(min-width: 465px)" srcset="kitten-medium.png">
+    <img src="kitten-small.png" alt="Cute kitten">
+  </picture>
+
+</body>
+
+</html>
