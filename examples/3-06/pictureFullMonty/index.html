@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Udacity RI: picture with </title>
+
+  <style>
+    body {
+      align-items: center;
+      display: flex;
+      font-family: Roboto condensed;
+      height: 100vh;
+      justify-content: center;
+      margin: 0;
+    }
+    img {
+      width: 50vw;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+<picture>
+  <source
+    media="(min-width: 1000px)"
+    srcset="kookaburra_large_1x.jpg 1x, kookaburra_large_2x.jpg 2x">
+  <source
+    media="(min-width: 500px)"
+    srcset="kookaburra_medium_1x.jpg 1x, kookaburra_medium_2x.jpg 2x">
+  <img src="kookaburra_small.jpg"
+    alt="The kookaburra: a terrestrial tree kingfisher native to Australia and New Guinea (according to Wikipedia)">
+</picture>
+
+
+</body>
+
+</html>
