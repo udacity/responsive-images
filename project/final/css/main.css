@@ -1,0 +1,161 @@
+body {
+  /* lea.verou.me/css3patterns/#carbon-fibre */
+  background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px;  font-family: sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: #4183C4;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3d85c6;
+  text-decoration: underline;
+}
+
+a#viewSource {
+  display: block;
+  margin: 1.3em 0 0 0;
+  border-top: 1px solid #999;
+  padding: 1em 0 0 0;
+}
+
+div#links a {
+  display: block;
+  line-height: 1.3em;
+  margin: 0 0 1.5em 0;
+}
+
+h1 a {
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 1em;
+  word-break: break-word;
+}
+
+div#container {
+  margin: 0 auto 0 auto;
+  max-width: 40em;
+  padding: 1em 1.5em 1.3em 1.5em;
+}
+
+h1 {
+  border-bottom: 1px solid #ccc;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin: 0 0 0.8em 0;
+  padding: 0 0 0.2em 0;
+}
+
+h2 {
+  color: #444;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin: 0 0 0.8em 0;
+}
+
+h3 {
+  border-top: 1px solid #eee;
+  color: #666;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 20px 0 10px 0;
+  padding: 10px 0 0 0;
+  white-space: nowrap;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+}
+
+ol {
+  padding: 0 0 0 20px;
+}
+
+p {
+  color: #444;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+p.borderBelow {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 1em 0;
+}
+
+section p:last-of-type {
+  margin: 0;
+}
+
+section {
+  border-bottom: 1px solid #eee;
+  margin: 0 0 30px 0;
+  padding: 0 0 20px 0;
+}
+
+section:last-of-type {
+  border-bottom: none;
+  padding: 0 0 1em 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+ul {
+  padding: 0 0 0 20px;
+}
+
+section p:last-of-type {
+  margin: 0;
+}
+
+section {
+  border-bottom: 1px solid #eee;
+  margin: 0 0 30px 0;
+  padding: 0 0 20px 0;
+}
+
+section:last-of-type {
+  border-bottom: none;
+  padding: 0 0 1em 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+
