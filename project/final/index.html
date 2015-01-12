@@ -6,13 +6,13 @@
   <meta name="author" content="//samdutton.com">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta itemprop="name" content="Udacity Responsive Images course project">
-  <meta itemprop="image" content="/icon_192x192.png">
+  <meta itemprop="image" content="images/icon.png">
   <meta name="mobile-web-app-capable" content="yes">
   <meta id="theme-color" name="theme-color" content="#307699">
 
   <base target="_blank">
 
-  <title>Udacity Responsive Images project: final version</title>
+  <title>My responsive blog: picture story</title>
 
   <link rel="stylesheet" href="css/main.css" />
 
@@ -20,19 +20,77 @@
 
 <body>
 
-  <div id="container">
+  <header>
+    <a href="//github.com/udacity/responsive-images/" title="Home page for course examples">
+      <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <title>Responsive logo</title>
+        <path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path>
+      </svg>
+      <h1>My responsive blog</h1>
+    </a>
+  </header>
 
-    <h1>Responsive Blog</h1>
+  <article>
 
-    <picture>
-      <source media="(min-width: 750px)" srcset="images/horses_large.jpg" />
-      <source media="(min-width: 500px)" srcset="images/horses_medium.jpg" />
-      <img src="images/horses_small.jpg" alt="Horses in Hawaii">
+    <picture id="banner">
+      <source media="(min-width: 750px)" srcset="images/still_life_large.jpg" />
+      <source media="(min-width: 500px)" srcset="images/still_life_medium.jpg" />
+      <img src="images/still_life_small.jpg" alt="Vase, fruit bowl and other objects on a cupboad">
     </picture>
 
-    <a href="//github.com/udacity/responsive-images/tree/master/project" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+    <h2>Picture story</h2>
 
-  </div>
+    <section id="story">
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/horses_large.jpg" />
+        <source media="(min-width: 500px)" srcset="images/horses_medium.jpg" />
+        <img src="images/horses_small.jpg" alt="Horses in Hawaii">
+      </picture>
+
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/guitar_large.jpg" />
+        <source media="(min-width: 500px)" srcset="images/guitar_medium.jpg" />
+        <img src="images/guitar_small.jpg" alt="Seagull S6 Classic guitar">
+      </picture>
+
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/cockatoos_large.jpg" />
+        <source media="(min-width: 500px)" srcset="images/cockatoos_medium.jpg" />
+        <img src="images/cockatoos_small.jpg" alt="Cockatoos in Victoria, Australia">
+      </picture>
+
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/postcard_large.jpg" />
+        <source media="(min-width: 500px)" srcset="images/postcard_medium.jpg" />
+        <img src="images/postcard_small.jpg" alt="19th century French postcard">
+      </picture>
+
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/grasshopper_large.jpg" />
+        <source media="(min-width: 500px)" srcset="images/grasshopper_medium.jpg" />
+        <img src="images/grasshopper_small.jpg" alt="Grasshopper on an Akubra hat">
+      </picture>
+
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/aubergine_large.jpg" />
+        <source media="(min-width: 500px)" srcset="images/aubergine_medium.jpg" />
+        <img src="images/aubergine_small.jpg" alt="Strange looking aubergine (aka eggplant)">
+      </picture>
+
+      <picture>
+        <source media="(min-width: 750px)" srcset="images/rosella_large.jpg" />
+        <source media="(min-width: 500px)" srcset="images/rosella_medium.jpg" />
+        <img src="images/rosella_small.jpg" alt="Australian rosella">
+      </picture>
+
+    </section>
+
+  </article>
+
+  <footer>
+    <a href="//github.com/udacity/responsive-images/tree/master/project/final" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+  </footer>
+
 
   <!-- <script src="../js/lib/ga.js"></script> -->
 
