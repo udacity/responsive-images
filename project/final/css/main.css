@@ -1,3 +1,17 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+[class*="zocial-"]:before {
+  color: black;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  text-shadow: 3px 3px 3px #aaa;
+  width: 2em;
+}
+
+a:hover [class*="zocial-"]:before {
+  color: #3d85c6;
+}
+
 a {
   color: #4183C4;
   font-weight: 300;
@@ -6,13 +20,22 @@ a {
 
 a:hover {
   color: #3d85c6;
+  text-decoration: underline;
 }
 
 a#viewSource {
   display: block;
   margin: 1.3em 0 0 0;
-  border-top: 1px solid #999;
+  border-top: 1px solid #ddd;
   padding: 1em 0 0 0;
+}
+
+div#social a {
+  margin: 0 1em 0 0;
+}
+
+div#social a:last-of-type {
+  margin: 0;
 }
 
 div#links a {
@@ -27,11 +50,15 @@ h1 a {
 }
 
 article {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
+
+    /* border-bottom: 1px solid #aaa; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 0 0 2em 0; */
   max-width: 70em;
+    /* padding: 0 0  2em 0; */
   text-align: center;
 }
 
@@ -53,8 +80,9 @@ body {
 }
 
 figcaption {
+  color: #bb021e;
   font-family: 'Roboto condensed', sans-serif;
-  padding: 1vh 0;
+  padding: 2em 0;
   text-align: center;
 }
 
@@ -62,8 +90,12 @@ figure {
   margin: 1em 0 1em 0;
 }
 
+footer {
+  text-align: center;
+}
+
   h1 {
-    color: #666;
+    color: #444;
     font-family: 'Roboto condensed', sans-serif;
     font-weight: 500;
     font-size: 6vw;
@@ -76,7 +108,7 @@ figure {
 
   h2 {
     border-bottom: 1px solid #ddd;
-    color: #444;
+    color: #bb021e;
     font-family: 'Roboto condensed', sans-serif;
     font-size: 5vw;
     font-weight: 500;
@@ -84,7 +116,7 @@ figure {
     margin: 0 0 1em 0;
     padding: 0 0 1em 0;
     /* text-align: center; */
-  
+
     display: inline-block;
 }
 
@@ -110,7 +142,7 @@ figure {
     -webkit-filter: saturate(3) opacity(0.7);
     margin: 0 0 2em 0;
     max-width: 100vw;
-    width: 100vw;  
+    width: 100vw;
 }
 
   ol {
@@ -141,10 +173,9 @@ figure {
   }
 
   section:last-of-type {
-    border-bottom: none;
-    /* padding: 0 0 1em 0; */
-  
-    margin: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 2em 0;
+    padding: 0 0 2em 0;
 }
 
   strong {
@@ -153,14 +184,14 @@ figure {
 
   section#story {
     /* align-items: center; */
-        
+
     /* display: flex; */
     /* justify-content: center; */
     /* flex-direction: column; */
- 
+
     max-width: 50em;
 
-  
+
     width: 90vw;
 }
 

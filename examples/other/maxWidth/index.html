@@ -10,16 +10,22 @@
       margin: 0;
     }
     img {
+      display: block;
       float: left;
-      height: auto
+      width: 50vw;
+    }
+    img.max-width {
+      max-width: 213px;
     }
   </style>
 
 </head>
 
 <body>
-  <img style="width: 50%;" src="../../images/horse_107x180_low.jpg" alt="Horse" />
-  <img style="width: 50%; max-width: 213px;" src="../../images/horse_107x180_low.jpg" alt="Horse" />
+
+  <img src="horse.jpg" alt="Horse" />
+  <img class="max-width" src="horse.jpg" alt="Horse" />
+
 </body>
 
 </html>
