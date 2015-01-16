@@ -1,4 +1,4 @@
-# Responsive Images: project #
+# Responsive Images: examples #
 
 This directory includes all the examples used in the course.
 
