@@ -8,4 +8,4 @@ The [project directory](https://github.com/udacity/responsive-images/tree/master
 
 ##Examples##
 
-You can view examples from the course at [udacity.github.io/responsive-images](http://udacity.github.io/responsive-images/), the GitHub Page site that corresponds to the gh-pages branch of the repo. Code for these examples is available from the [examples directory](https://github.com/udacity/responsive-images/tree/master/examples).
+You can view examples from the course at [udacity.github.io/responsive-images](http://udacity.github.io/responsive-images/), the GitHub Pages site that corresponds to the gh-pages branch of the repo. Code for these examples is available from the [examples directory](https://github.com/udacity/responsive-images/tree/master/examples).
