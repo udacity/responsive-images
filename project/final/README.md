@@ -4,7 +4,8 @@ This version uses the picture element for art direction: different image crops a
 
 The images still use `max-width: 100%` – which means 'expand the image display size to fit the container, but no larger than the natural width of the image'. What defines the size of the body images? You can find out with the Dev Tools.
 
-## Problems ##
+## To do ##
+
 * Getting text size right is hard. Is the body text too big or small on some devices and window sizes? Are the headings the right size relative to the body text?
 * In GPRS emulation mode, this page still takes nearly a minute to load. Images load randomly – and the image captions load first and don't make sense without the images. How might image loading be accomplished more efficiently? Take a look at the [Resource Priorities](https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/ResourcePriorities/Overview.html#attr-lazyload) editor's draft. What about JavaScript alternatives, such as the jQuery [Lazy Load Plugin](http://www.appelsiini.net/projects/lazyload)? Any potential problems?
 * The markup is verbose! We've gone from around 7,000 characters to over 14,000. That's twice the download size – just to start displaying text. How could we improve this?

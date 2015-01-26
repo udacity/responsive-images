@@ -38,12 +38,6 @@ div#social a:last-of-type {
   margin: 0;
 }
 
-div#links a {
-  display: block;
-  line-height: 1.3em;
-  margin: 0 0 1.5em 0;
-}
-
 h1 a {
   font-weight: 300;
   white-space: nowrap;

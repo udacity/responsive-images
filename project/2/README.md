@@ -12,6 +12,8 @@ As for quality – only you can decide... How low can you go?
 
 By reducing image widths to 1600px and saving at the lowest possible quality, total page weight is now reduced from 3.1MB to 1.3MB. Turning on DSL throttling in Dev Tools emulation mode, shows page load time reduced from over 12 seconds to less than 6.
 
-## Problems ##
+## To do ##
 
-* The images don't have any captions. What's the right way to add these?
+* How could you make this page more accessible to those using a screen reader? (Hint: you can use a tool like the W3C Validator to find out what's missing from the img elements.)
+* The images don't have any captions. What's a good way to add these?
+* The images can be optimized further. Using the tools described in the course, see how much you can reduce page weight.
