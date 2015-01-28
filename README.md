@@ -4,8 +4,13 @@ This is a repository for files used in the forthcoming Udacity Responsive Images
 
 ##Project##
 
-The [project directory](https://github.com/udacity/responsive-images/tree/master/project) contains completed examples from the course project.
+Code for solutions to each stage of the course project is available from the repo's [project directory](https://github.com/udacity/responsive-images/tree/master/project).
+
+View each of the project steps live at [udacity.github.io/responsive-images/project](http://udacity.github.io/responsive-images/project).
 
 ##Examples##
 
-You can view examples from the course at [udacity.github.io/responsive-images](http://udacity.github.io/responsive-images/), the GitHub Pages site that corresponds to the gh-pages branch of the repo. Code for these examples is available from the [examples directory](https://github.com/udacity/responsive-images/tree/master/examples).
+Code for these examples is available from the repo's [examples directory](https://github.com/udacity/responsive-images/tree/master/examples).
+
+View examples live at [udacity.github.io/responsive-images](http://udacity.github.io/responsive-images/). This is the [GitHub Pages](https://pages.github.com) site that corresponds to the gh-pages branch of the repo.
+
