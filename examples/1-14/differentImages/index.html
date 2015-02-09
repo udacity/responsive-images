@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <base target="_blank">
+  <title>Udacity RI: Raster or Vector?</title>
+
+  <link rel="icon" sizes="192x192" href="../../../images/icon.png">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+  <style>
+    body {
+      margin: 0 5px;
+      font-family: 'Roboto', sans-serif;
+    }
+    img {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    .carbon {
+      /*
+      Check out the source!
+      Source: http://lea.verou.me/css3patterns/#carbon
+      */
+      background:
+      linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+      linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+      linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+      linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+      linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+      linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+      background-color: #131313;
+      background-size: 20px 20px;
+      width: 75%;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    svg {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    .source {
+      display: block;
+      float: right;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Chrome Logo</h1>
+  <img src="http://upload.wikimedia.org/wikipedia/commons/0/01/Google_Chrome_icon_and_wordmark_%282011%29.svg" alt="Chrome Logo" />
+  <a class="source" href="http://upload.wikimedia.org/wikipedia/commons/0/01/Google_Chrome_icon_and_wordmark_%282011%29.svg">Source</a>
+  <h1>Kittens</h1>
+  <img src="../../images/kittens_large.jpg" alt="Kittens" />
+  <span class="source">Source: Sam Dutton</span>
+  <h1>Flag of Mexico</h1>
+  <img src="http://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Kittens" />
+  <a class="source" href="http://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg">Source</a>
+  <h1>Repeated Background</h1>
+  <div class="carbon"></div>
+  <a class="source" href="http://lea.verou.me/css3patterns/#carbon">Source</a>
+  <h1>Gradient Background</h1>
+  <!--
+  Check out the source!
+  Source: https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Gradients
+  -->
+  <svg width="320" height="350" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="Gradient1">
+        <stop class="stop1" offset="0%"/>
+        <stop class="stop2" offset="50%"/>
+        <stop class="stop3" offset="100%"/>
+      </linearGradient>
+      <style type="text/css"><![CDATA[
+        #rect1 { fill: url(#Gradient1); }
+        .stop1 { stop-color: red; }
+        .stop2 { stop-color: black; stop-opacity: 0; }
+        .stop3 { stop-color: blue; }
+        ]]></style>
+    </defs>
+     
+      <rect id="rect1" x="10" y="10" rx="15" ry="15" width="300" height="300"/>
+  </svg>
+  <a class="source" href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Gradients">Source</a>
+
+
+<script src="../../../js/lib/ga.js"></script>
+
+</body>
+
+</html>
