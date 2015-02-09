@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Udacity RI: conditional background image</title>
+
+  <link rel="icon" sizes="192x192" href="../../../images/icon.png">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+  <style>
+    body {
+      font-family: 'Roboto';
+      font-weight: 200;
+      margin: 5vw;
+    }
+    h3 {
+      text-align: center;
+    }
+    div.html5 {
+      background-image: url(../../../images/html5_200x282_high.png);
+    }
+    div.photo {
+      background-size: cover;
+      float: left;
+      margin: 0 2vw 1vw 0;
+      height: 282px;
+      position: relative;
+      top: 3px;
+      transition: all 0.5s;
+      width: 200px;
+
+    }
+    @media screen and (max-width: 500px) {
+      div.photo {
+        background-image: none;
+        height: 0;
+        margin: 0;
+        width: 0;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="html5 photo"></div>
+
+  <p>This is a riveting article about HTML5. Pop-up Shoreditch tousled, lomo bitters forage hashtag. Kickstarter hoodie chia butcher, raw denim iPhone crucifix. Bitters readymade post-ironic, fixie food truck messenger bag tattooed ugh gastropub Williamsburg letterpress. DIY farm-to-table synth, salvia small batch crucifix Marfa quinoa hoodie occupy. Plaid bitters wayfarers, narwhal PBR church-key flexitarian next level typewriter Echo Park. Banksy seitan actually letterpress authentic cray umami, selvage chillwave iPhone. Austin Marfa irony, put a bird on it blog Portland slow-carb.</p>
+
+  <p>Slow-carb pickled Brooklyn beard, stumptown Portland readymade artisan +1 paleo lumbersexual 90s fanny pack meditation keytar. Hashtag Intelligentsia typewriter, biodiesel squid fanny pack jean shorts Shoreditch locavore Odd Future VHS Portland shabby chic Austin ennui. Hoodie sriracha Carles sartorial Kickstarter gastropub, artisan cronut occupy. Deep v wayfarers typewriter health goth, you probably haven't heard of them kogi Shoreditch. IPhone tofu food truck roof party fingerstache Shoreditch, fashion axe XOXO jean shorts Blue Bottle Pitchfork hoodie quinoa lumbersexual artisan. Messenger bag try-hard aesthetic jean shorts. Mixtape retro American Apparel, hoodie wayfarers put a bird on it Pinterest PBR&amp;B plaid.</p>
+
+  <h3>Share this!</h3>
+  <div class="iconFonts">
+    <!--
+    Your font icons go here!
+    -->
+  </div>
+
+<script src="../../../js/lib/ga.js"></script>
+
+</body>
+
+</html>
