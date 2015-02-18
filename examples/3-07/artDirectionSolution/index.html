@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Udacity RI: Art Direction Practice</title>
+
+  <link rel="icon" sizes="192x192" href="../../../images/icon.png">
+  <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <style>
+    body {
+      font-family: 'Slabo 27px', serif;
+      font-weight: 200;
+      margin: 5vw;
+    }
+    img {
+      width: 100vw;
+      margin: auto -5vw;
+    }
+    p.blog-text {
+      max-width: 800px;
+      font-size: 1.25em;
+      margin: 1.5em auto;
+      text-align: justify;
+    }
+    p.img-credit {
+      text-align: right;
+      margin: 0 auto 10px auto;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div class="content">
+  <h1>Art Direction!</h1>
+  
+  <p class="blog-text">There are three images below. Can you use the <code>picture</code> element to display different crops at <code>min-width: 750px</code> , <code>min-width: 500px </code> and<code> max-width: 499px</code>?</p>
+  
+  <picture>
+    <source media="(min-width: 750px)" srcset="images/nashville-large.jpg"></source>
+    <source media="(min-width: 500px)" srcset="images/nashville-medium.jpg" ></source>
+    <img src="images/nashville-small.jpg" alt="Nashville panorama">
+  </picture>
+  <p class="img-credit"><em>Image Credit: <a href="http://commons.wikimedia.org/wiki/File:Nashville_panorama_Kaldari_01.jpg#mediaviewer/File:Nashville_panorama_Kaldari_01.jpg">Kaldari</a></em></p>
+
+  <!--
+  "Nashville panorama Kaldari 01" by Kaldari - Own work. Licensed under Public Domain via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Nashville_panorama_Kaldari_01.jpg#mediaviewer/File:Nashville_panorama_Kaldari_01.jpg
+  -->
+
+  <picture>
+    <source media="(min-width: 750px)" srcset="images/wrigley_field-large.jpg"></source>
+    <source media="(min-width: 500px)" srcset="images/wrigley_field-medium.jpg"></source>
+    <img src="images/wrigley_field-small.jpg" alt="Wrigley Field - panorama - upper deck">
+  </picture>
+  <p class="img-credit"><em>Image Credit: <a href="http://commons.wikimedia.org/wiki/File:Wrigley_Field_-_panorama_-_upper_deck_-_2009-07-29.jpg#mediaviewer/File:Wrigley_Field_-_panorama_-_upper_deck_-_2009-07-29.jpg">Jauerback</a></em></p>
+  
+  <!--
+  "Wrigley Field - panorama - upper deck - 2009-07-29" by Jauerback - Own work. Licensed under CC BY-SA 3.0 via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Wrigley_Field_-_panorama_-_upper_deck_-_2009-07-29.jpg#mediaviewer/File:Wrigley_Field_-_panorama_-_upper_deck_-_2009-07-29.jpg
+  -->
+
+  <picture>
+    <source media="(min-width: 750px)" srcset="images/astronaut-large.jpg"></source>
+    <source media="(min-width: 500px)" srcset="images/astronaut-medium.jpg"></source>
+    <img src="images/astronaut-small.jpg" alt="Apollo 17 Cernan on moon">
+  </picture>
+  <p class="img-credit"><em>Image Credit: <a href="http://commons.wikimedia.org/wiki/File:Apollo_17_Cernan_on_moon.jpg#mediaviewer/File:Apollo_17_Cernan_on_moon.jpg">NASA</a></em></p>
+
+  <!--
+  "Apollo 17 Cernan on moon" by NASA / Harrison H. Schmitt - NASA Images at the Internet Archive (image link). Licensed under Public Domain via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Apollo_17_Cernan_on_moon.jpg#mediaviewer/File:Apollo_17_Cernan_on_moon.jpg
+  -->
+</div>
+
+<script src="../../../js/lib/ga.js"></script>
+
+</body>
+</html>
