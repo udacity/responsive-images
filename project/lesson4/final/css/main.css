@@ -46,25 +46,17 @@ article {
   display: flex;
   flex-direction: column;
   max-width: 50em;
+  border-bottom: 1px solid #ddd;
 }
 
 body {
-  /* lea.verou.me/css3patterns/#carbon-fibre */
-  /* background:
-    radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-  background-color: #282828;
-  background-size: 16px 16px; */
-
   align-items: center;
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
   margin: 3vh 0 3vh 0;
   text-align: center;
-  }
+}
 
 div#social {
   line-height: 2em;

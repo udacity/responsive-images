@@ -21,6 +21,7 @@ div#social a:last-of-type {
 article {
   margin: 0 auto;
   max-width: 50em;
+  border-bottom: 1px solid #ddd;
 }
 
 body {
