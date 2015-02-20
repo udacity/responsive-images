@@ -15,14 +15,17 @@ var tests = [
       {
         selector: ".photo",
         attr: "srcset",
-        value: "images/silicon_valley_1x.jpg 1x, images/silicon_valley_2x.jpg 2x"
+        values: [ // can be any one of these
+          "images/silicon_valley_1x.jpg 1x, images/silicon_valley_2x.jpg 2x",
+          "images/silicon_valley_1x.jpg, images/silicon_valley_2x.jpg 2x"
+        ]
       }
     ],
-    desc: ".photo is using srcset"
+    desc: "srcset links to the correct files"
   }
 ]
 
-var grader = new UdaciTests("Relative Width Quiz", tests, "setasourceinthiscourse", 1000);
+var grader = new UdaciTests("srcset Practice", tests, "setasourceinthiscourse", 1000);
 
 window.onload = function() {
   grader.runGradeLoop();
