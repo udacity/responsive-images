@@ -15,7 +15,7 @@ var tests = [
       {
         leftElemSelector: "#img1",
         rightElemSelector: "#img2",
-        width: 10 // must be px for now
+        distance: 10 // must be px for now
       }
     ],
     desc: "There are 10px between #img1 and #img2"
