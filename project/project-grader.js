@@ -24,77 +24,48 @@ var suites = [
           }
         ],
         desc: "&lt;articles&gt; are reasonably wide (600-1200px)" // descriptions must be unique
-      },
-      {
-        func: "testPageSize",
-        params: [
-          {
-            maxSize: 1500000 // in bytes
-          }
-        ],
-        desc: "Page bytes are under 1.5MB"
       }
+      // {
+      //   func: "testPageSizeLocal",
+      //   params: [
+      //     {
+      //       maxSize: 1500000 // in bytes
+      //     }
+      //   ],
+      //   desc: "Page bytes are under 1.5MB"
+      // }
     ]
   },
   {
     name: "Lesson 3",
-    code: "myrelativesareskinny",
+    code: "markupisprettyawesome",
     tests: [
       {
-        func: "testDOMelemCount",
+        func: "testDOMelemDoesntExist",
         params: [
           {
-            selector: "img",
-            count: 9
+            selector: "img[src='images/smiley_face.png']"
           }
         ],
-        desc: "There are three images 3"
-      }
-    ]
-  },
-  {
-    name: "Lesson 4",
-    code: "myrelativesareaverage",
-    tests: [
-      {
-        func: "testDOMelemCount",
-        params: [
-          {
-            selector: "img",
-            count: 10
-          }
-        ],
-        desc: "There are three images 3"
+        desc: "smiley_face.png is gone"
       },
       {
-        func: "testDOMelemCount",
+        func: "testFindStringInHTML",
         params: [
           {
-            selector: "img",
-            count: 10
+            stringOpts: ["☺", "&#9786;"] // looking for one of these
           }
         ],
-        desc: "There are three images 3"
+        desc: "Smiley face is unicode (you may need to reload the page)"
       },
       {
-        func: "testDOMelemCount",
+        func: "testDOMelemDoesntExist",
         params: [
           {
-            selector: "img",
-            count: 10
+            selector: "img[src='images/flourish.png']" // looking for one of these
           }
         ],
-        desc: "There are three images 3"
-      },
-      {
-        func: "testDOMelemCount",
-        params: [
-          {
-            selector: "img",
-            count: 9
-          }
-        ],
-        desc: "There are three images 3"
+        desc: "Flourish is gone"
       }
     ]
   }
