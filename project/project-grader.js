@@ -24,16 +24,18 @@ var suites = [
           }
         ],
         desc: "&lt;articles&gt; are reasonably wide (600-1200px)" // descriptions must be unique
+      },
+      {
+        func: "testPageSizeMinimumLocal",
+        noRepeat: true,
+        async: true,
+        params: [
+          {
+            maxSize: 1500000 // in bytes
+          }
+        ],
+        desc: "Page bytes are under 1.5MB (refresh to update)"
       }
-      // {
-      //   func: "testPageSizeLocal",
-      //   params: [
-      //     {
-      //       maxSize: 1500000 // in bytes
-      //     }
-      //   ],
-      //   desc: "Page bytes are under 1.5MB"
-      // }
     ]
   },
   {
@@ -56,7 +58,7 @@ var suites = [
             stringOpts: ["☺", "&#9786;"] // looking for one of these
           }
         ],
-        desc: "Smiley face is unicode (you may need to reload the page)"
+        desc: "Smiley face is unicode"
       },
       {
         func: "testMetaTagContent",
@@ -86,7 +88,7 @@ var suites = [
             values: ["twitter"]
           }
         ],
-        desc: "A Twitter icon font is on the page"
+        desc: "A Twitter font icon is on the page"
       },
       {
         func: "testDOMelemAttrApproxContent",
@@ -97,7 +99,7 @@ var suites = [
             values: ["digg"]
           }
         ],
-        desc: "A Digg icon font is on the page"
+        desc: "A Digg font icon is on the page"
       },
       {
         func: "testDOMelemAttrApproxContent",
@@ -108,7 +110,7 @@ var suites = [
             values: ["facebook"]
           }
         ],
-        desc: "A Facebook icon font is on the page"
+        desc: "A Facebook font icon is on the page"
       },
       {
         func: "testDOMelemAttrApproxContent",
@@ -119,13 +121,13 @@ var suites = [
             values: ["google"]
           }
         ],
-        desc: "A Google+ icon font is on the page"
+        desc: "A Google+ font icon is on the page"
       }
     ]
   },
   {
     name: "Lesson 4",
-    code: "allpictures,allthetime",
+    code: "allthepictures,allthetime",
     tests: [
       {
         func: "testDOMelemCount",
