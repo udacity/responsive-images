@@ -28,7 +28,7 @@ var suites = [
       {
         func: "testPageSizeMinimumLocal",
         async: true,
-        noRepeat: true, // leaving this here to show that it's possible. all async tests are automatically noRepeat
+        noRepeat: true, // not necessary. leaving this here to show that it's possible. all async tests are automatically noRepeat
         showCurrent: true, // currently only works with async tests
         params: [
           {
