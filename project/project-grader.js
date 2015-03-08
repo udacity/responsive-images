@@ -27,8 +27,9 @@ var suites = [
       },
       {
         func: "testPageSizeMinimumLocal",
-        noRepeat: true,
         async: true,
+        noRepeat: true, // leaving this here to show that it's possible. all async tests are automatically noRepeat
+        showCurrent: true, // currently only works with async tests
         params: [
           {
             maxSize: 1500000 // in bytes
