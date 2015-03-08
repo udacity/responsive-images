@@ -138,7 +138,7 @@ var suites = [
             count: 8
           }
         ],
-        desc: "There are 8 &lt;picture&gt;s on the page."
+        desc: "There are 8 &lt;picture&gt;s on the page"
       },
       {
         func: "testDOMelemsCounts",
@@ -149,7 +149,7 @@ var suites = [
             count: 2
           }
         ],
-        desc: "There are 2 &lt;sources&gt;s per &lt;picture&gt;."
+        desc: "There are 2 &lt;sources&gt;s per &lt;picture&gt;"
       },
       {
         func: "testDOMelemsCounts",
@@ -160,7 +160,7 @@ var suites = [
             count: 1
           }
         ],
-        desc: "There is 1 &lt;img&gt;s per &lt;picture&gt;."
+        desc: "There is 1 &lt;img&gt;s per &lt;picture&gt;"
       },
       {
         func: "testDOMelemsChildPosition",
