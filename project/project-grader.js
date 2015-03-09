@@ -160,7 +160,7 @@ var suites = [
             count: 1
           }
         ],
-        desc: "There is 1 &lt;img&gt;s per &lt;picture&gt;"
+        desc: "There is 1 &lt;img&gt; per &lt;picture&gt;"
       },
       {
         func: "testDOMelemsChildPosition",
