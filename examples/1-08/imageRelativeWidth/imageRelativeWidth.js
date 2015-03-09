@@ -1,60 +1,64 @@
-var tests = [
+var suites = [
   {
-    test: "testDOMelemCount",
-    params: [
+    name: "calc() Quiz",
+    code: "myrelativesarewide",
+    tests: [
       {
-        selector: "img",
-        count: 3
-      }
-    ],
-    desc: "There are three images"
-  },
-  {
-    test: "testDOMelemsHorizontalSeparation",
-    params: [
+        func: "testDOMelemCount",
+        params: [
+          {
+            selector: "img",
+            count: 3
+          }
+        ],
+        desc: "There are three images"
+      },
       {
-        leftElemSelector: "#img1",
-        rightElemSelector: "#img2",
-        distance: 10 // must be px for now
-      }
-    ],
-    desc: "There are 10px between #img1 and #img2"
-  },
-  {
-    test: "testDOMelemsHorizontalSeparation",
-    params: [
+        func: "testDOMelemsHorizontalSeparation",
+        params: [
+          {
+            leftElemSelector: "#img1",
+            rightElemSelector: "#img2",
+            distance: 10 // must be px for now
+          }
+        ],
+        desc: "There are 10px between #img1 and #img2"
+      },
       {
-        leftElemSelector: "#img2",
-        rightElemSelector: "#img3",
-        distance: 10 // must be px for now
-      }
-    ],
-    desc: "There are 10px between #img2 and #img3"
-  },
-  {
-    test: "testDOMelemAbsolutePosition",
-    params: [
+        func: "testDOMelemsHorizontalSeparation",
+        params: [
+          {
+            leftElemSelector: "#img2",
+            rightElemSelector: "#img3",
+            distance: 10 // must be px for now
+          }
+        ],
+        desc: "There are 10px between #img2 and #img3"
+      },
       {
-        selector: "#img1",
-        left: 0 // must be px for now
-      }
-    ],
-    desc: "Left image is flush against viewport"
-  },
-  {
-    test: "testDOMelemAbsolutePosition",
-    params: [
+        func: "testDOMelemAbsolutePosition",
+        params: [
+          {
+            selector: "#img1",
+            left: 0 // must be px for now
+          }
+        ],
+        desc: "Left image is flush against viewport"
+      },
       {
-        selector: "#img3",
-        right: "max" // "max" is useful for right and bottom
+        func: "testDOMelemAbsolutePosition",
+        params: [
+          {
+            selector: "#img3",
+            right: "max" // "max" is useful for right and bottom
+          }
+        ],
+        desc: "Right image is flush against viewport"
       }
-    ],
-    desc: "Right image is flush against viewport"
+    ]
   }
 ]
 
-var grader = new UdaciTests("Relative Width Quiz", tests, "myrelativesarewide", 1000);
-
-window.onload = function() {
-  grader.runGradeLoop();
+var graderProperties = {
+  suites: suites
 }

@@ -1,7 +1,7 @@
 var suites = [
   {
     name: "Project Part 1",
-    code: "ready!set!blog!",
+    code: "ready!set!responsiveimages!",
     tests: [
       {
         func: "testDOMelemCSS",
