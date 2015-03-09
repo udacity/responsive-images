@@ -1,6 +1,6 @@
 var suites = [
   {
-    name: "Lesson 2",
+    name: "Project Part 1",
     code: "ready!set!blog!",
     tests: [
       {
@@ -40,7 +40,7 @@ var suites = [
     ]
   },
   {
-    name: "Lesson 3",
+    name: "Project Part 2",
     code: "markupisprettyawesome",
     tests: [
       {
@@ -127,7 +127,7 @@ var suites = [
     ]
   },
   {
-    name: "Lesson 4",
+    name: "Project Part 3",
     code: "allthepictures,allthetime",
     tests: [
       {
