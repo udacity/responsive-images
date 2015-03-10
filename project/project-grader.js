@@ -23,7 +23,7 @@ var suites = [
             value: "600-1200px"
           }
         ],
-        desc: "&lt;articles&gt; are reasonably wide (600-1200px)" // descriptions must be unique
+        desc: "&lt;article&gt;s are reasonably wide (600-1200px)" // descriptions must be unique
       },
       {
         func: "testPageSizeMinimumLocal",
