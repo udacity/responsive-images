@@ -24,16 +24,23 @@ module.exports = function(grunt) {
         }]
       }
     },
+
     /* Clear out the images directory if it exists */
-    clean: ['images'],
+    clean: {
+      dev: {
+        src: ['images'],
+      },
+    },
+
     /* Generate the images directory if it is missing */
     mkdir: {
-      all: {
+      dev: {
         options: {
           create: ['images']
         },
       },
     },
+
     /* Copy the "fixed" images that don't go through processing into the images/directory */
     copy: {
       dev: {
@@ -42,7 +49,8 @@ module.exports = function(grunt) {
           src: 'images_src/fixed/*.{gif,jpg,png}',
           dest: 'images/'
         }]
-
+      },
+    },
   });
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-contrib-clean');
