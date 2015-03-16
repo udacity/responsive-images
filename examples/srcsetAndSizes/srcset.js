@@ -1,18 +1,21 @@
 var suites = [
   {
-    name: "Project Part 1",
-    code: "",
+    name: "srcset",
+    code: "setupyoursources",
     tests: [
       {
-        func: "testDOMelemCSS",
+        func: "testDOMelemAttrContent",
         params: [
           {
-            selector: "article img",
-            property: "max-width",
-            value: "100%"
+            selector: "img.srcset",
+            attr: "srcset",
+            values: [
+              "images/Den_Haag_2x.jpg 2x, images/Den_Haag_1x.jpg 1x",
+              "images/Den_Haag_1x.jpg 1x, images/Den_Haag_2x.jpg 2x",
+            ]
           }
         ],
-        desc: "&lt;img&gt;s have max-widths of 100%"
+        desc: "&lt;img&gt;s are using correct srcset"
       }
     ]
   }

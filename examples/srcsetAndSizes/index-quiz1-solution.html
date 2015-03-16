@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="description" content="Udacity Responsive Images course project" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta charset="utf-8">
+  <meta itemprop="image" content="images/icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <base target="_blank">
+
+  <title>srcset quiz</title>
+
+  <link rel="icon" sizes="192x192" href="images/icon.png">
+  <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
+
+
+</head>
+
+<body>
+
+  <style>
+    body {
+      font-family: 'Slabo 27px', serif;
+      text-align: center;
+    }
+    
+    img {
+      max-width: 100%;
+    }
+
+    figure {
+      margin: 0 -8px;
+    }
+
+    figcaption {
+      margin-left: 2em;
+    }
+
+  </style>
+
+  <h1>Instructions</h1>
+  <p><code>srcset</code> is super useful. Make it work below!</p>
+
+  <h1><code>srcset</code> Using DPI</h1>
+  <figure>
+    <img class="srcset" srcset="images/Den_Haag_2x.jpg 2x, images/Den_Haag_1x.jpg 1x" alt="Den Haag Skyline">
+    <figcaption>Source: Cameron Pittman</figcaption>
+  </figure>
+
+  <h1>Using Image Width</h1>
+  <figure>
+    <img class="sizes" srcset="images/Australia_2x.jpg 2x, images/Australia_1x.jpg" alt="Australia from Space">
+    <figcaption>Source: <a href="http://commons.wikimedia.org/wiki/File:Australia_satellite_plane.jpg#/media/File:Australia_satellite_plane.jpg">NASA</a></figcaption>
+  </figure>
+    <!--
+    "Australia satellite plane" by Reto Stöckl / NASA Goddard Space Flight Center - The image is from [1], specifically land_shallow_topo_east.tif, which was cropped at 5250x4320+13390+11880.. Licensed under Public Domain via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Australia_satellite_plane.jpg#/media/File:Australia_satellite_plane.jpg
+    -->
+
+
+  <script src="srcset.js"></script>
+  <script async src="/frontend-grading-engine/ud-grading-engine-v0.1.js"></script>
+
+</body>
+</html>

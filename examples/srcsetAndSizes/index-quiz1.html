@@ -24,21 +24,41 @@
   <style>
     body {
       font-family: 'Slabo 27px', serif;
+      text-align: center;
     }
+    
+    img {
+      max-width: 100%;
+    }
+
+    figure {
+      margin: 0 -8px;
+    }
+
+    figcaption {
+      margin-left: 2em;
+    }
+
   </style>
 
-  <section>
-    <h1>Instructions</h1>
-  </section>
+  <h1>Instructions</h1>
+  <p><code>srcset</code> is super useful. Make it work below!</p>
 
-  <section>
-    <h1>Using DPI</h1>
-    <img src="" alt="">
-  </section>
+  <h1><code>srcset</code> Using DPI</h1>
+  <figure>
+    <img class="srcset" src="images/Den_Haag_2x.jpg" alt="Den Haag Skyline">
+    <figcaption>Source: Cameron Pittman</figcaption>
+  </figure>
 
-  <section>
-    <h1>Using Image Width</h1>
-  </section>
+  <h1>Using Image Width</h1>
+  <figure>
+    <img class="sizes" src="images/Australia_2x.jpg" alt="Australia from Space">
+    <figcaption>Source: <a href="http://commons.wikimedia.org/wiki/File:Australia_satellite_plane.jpg#/media/File:Australia_satellite_plane.jpg">NASA</a></figcaption>
+  </figure>
+    <!--
+    "Australia satellite plane" by Reto Stöckl / NASA Goddard Space Flight Center - The image is from [1], specifically land_shallow_topo_east.tif, which was cropped at 5250x4320+13390+11880.. Licensed under Public Domain via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Australia_satellite_plane.jpg#/media/File:Australia_satellite_plane.jpg
+    -->
+
 
   <script src="srcset.js"></script>
   <script async src="/frontend-grading-engine/ud-grading-engine-v0.1.js"></script>

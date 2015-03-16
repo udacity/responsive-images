@@ -5,11 +5,14 @@ module.exports = function(grunt) {
       dev: {
         options: {
           engine: 'im',
-          sizes: [{
-            width: 800,
-            suffix: "_800",
-            quality: 100
-          }]
+          newFilesOnly: true,
+          sizes: [
+            {
+              width: 1280,
+              suffix: "_1x",
+              quality: 100
+            }
+          ]
         },
 
         /*
