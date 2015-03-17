@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="Udacity Responsive Images course project" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta charset="utf-8">
+  <meta itemprop="image" content="images/icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <base target="_blank">
+  <title>srcset and sizes quiz</title>
+  <link rel="icon" sizes="192x192" href="images/icon.png">
+  <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <style>
+    body {
+      font-family: 'Slabo 27px', serif;
+    }
+    img {
+      width: 100vw;
+    }
+    p {
+      font-size: 1.25em;
+    }
+    figure {
+      margin: 0 -8px;
+    }
+    figcaption {
+      margin-left: 2em;
+    }
+    .center {
+      text-align: center;
+    }
+    .w {
+      transition: width 0.5s;
+    }
+    .code-style {
+      font-family: monospace;
+      background: rgb(220,220,220);
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(200,200,200);
+      border-radius: 2px;
+    }
+    @media screen and (max-width: 960px) {
+      .w {
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+      figure {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Instructions</h1>
+  <p><code class="code-style">sizes</code> alongside <code class="code-style">srcset</code> are an awesome combination for responsive images. This quiz is here to help you practice giving the browser the ability to decide which image it should download based on media queries and image width.</p>
+
+  <p>Don't forget to test all of your changes with DevTools!</p>
+
+  <h1 class="center"><code class="code-style">sizes</code> and <code class="code-style">srcset</code></h1>
+  <p>That coffee looks delicious. You know what's even more delicious? Responsive images based on media queries :) Help the browser determine the right image to download using <code class="code-style">srcset</code> to specify images with different natural resolutions and <code class="code-style">sizes</code> to tell the browser how wide the image will be on the page using media queries.</p>
+
+  <p>For this quiz, I want you to tell the browser to download that it has the option of using <code class="code-style">Coffee_1280w.jpg</code> and <code class="code-style">Coffee_640w.jpg</code>. Tell the browser that the image will display at 50vw if the page is smaller than 960px wide, otherwise the image displays at 100vw.</p>
+  <figure>
+    <img class="w" src="images/Coffee_1280w.jpg" alt="Coffee by Amy March from Turkey">
+    <figcaption>Source: <a href="http://commons.wikimedia.org/wiki/File%3AONE_MORE_CUP_OF_COFFEE_(VALLEY_BELOW)_(1264568795).jpg">Amy March</a> through <a href="http://creativecommons.org/licenses/by-sa/2.0">Creative Commons</a></figcaption>
+  </figure>
+  <!-- By Amy March from Ankara, Turkey [CC BY-SA 2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons -->
+
+  <script src="sizes.js"></script>
+  <script async src="/frontend-grading-engine/ud-grading-engine-v0.1.js"></script>
+
+</body>
+</html>
