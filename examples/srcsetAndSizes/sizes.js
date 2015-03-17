@@ -5,6 +5,7 @@ var suites = [
     tests: [
       {
         func: "testDOMelemCount",
+        repeat: true,
         params: [
           {
             selector: "img.w",
