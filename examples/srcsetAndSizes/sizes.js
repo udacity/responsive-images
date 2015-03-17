@@ -1,128 +1,47 @@
 var suites = [
   {
-    name: "Project Part 1",
-    code: "ready!set!responsiveimages!",
+    name: "srcset and sizes",
+    code: "sizedupthecompetition",
     tests: [
       {
-        func: "testDOMelemCSS",
+        func: "testDOMelemCount",
         params: [
           {
-            selector: "article img",
-            property: "max-width",
-            value: "100%"
+            selector: "img.w",
+            count: 1
           }
         ],
-        desc: "&lt;img&gt;s have max-widths of 100%"
+        desc: "Coffee image is on the page."
       },
       {
-        func: "testDOMelemCSS",
+        func: "testDOMelemAttrContent",
         params: [
           {
-            selector: "article",
-            property: "width",
-            value: "600-1200px"
+            selector: "img.w",
+            attr: "srcset",
+            values: [
+              "images/Coffee_1280w.jpg 1280w, images/Coffee_640w.jpg 640w",
+              "images/Coffee_640w.jpg 640w, images/Coffee_1280w.jpg 1280w"
+            ]
           }
         ],
-        desc: "&lt;article&gt;s are reasonably wide (600-1200px)" // descriptions must be unique
+        desc: "Both coffee image files are identified with srcset."
       },
       {
-        func: "testPageSizeMinimumLocal",
-        async: true,
-        noRepeat: true, // not necessary. leaving this here to show that it's possible. all async tests are automatically noRepeat
-        showCurrent: true, // currently only works with async tests
+        func: "testDOMelemAttrContent",
         params: [
           {
-            maxSize: 1500000 // in bytes
+            selector: "img.w",
+            attr: "sizes",
+            values: [
+              "(max-width: 960px) 50vw, 100vw",
+              "(max-width: 960px) 50vw",
+              "(max-width: 960px) 50vw, (min-width: 961px) 100vw",
+              "(min-width: 961px) 100vw, (max-width: 960px) 50vw"
+            ]
           }
         ],
-        desc: "Page bytes are under 1.5MB (refresh to update)"
-      }
-    ]
-  },
-  {
-    name: "Project Part 2",
-    code: "markupisprettyawesome",
-    tests: [
-      {
-        func: "testDOMelemDoesntExist",
-        params: [
-          {
-            selector: "img[src='images/smiley_face.png']"
-          }
-        ],
-        desc: "smiley_face.png is gone"
-      },
-      {
-        func: "testFindStringInDocument",
-        params: [
-          {
-            stringOpts: ["☺", "&#9786;"] // looking for one of these
-          }
-        ],
-        desc: "Smiley face is unicode"
-      },
-      {
-        func: "testMetaTagContent",
-        params: [
-          {
-            attr: "charset",
-            value: "utf-8"
-          }
-        ],
-        desc: "&lt;meta&gt; has charset set to utf-8"
-      },
-      {
-        func: "testDOMelemDoesntExist",
-        params: [
-          {
-            selector: "img[src='images/flourish.png']" // looking for one of these
-          }
-        ],
-        desc: "Flourish is gone"
-      },
-      {
-        func: "testDOMelemAttrApproxContent",
-        params: [
-          {
-            selector: "*",
-            attrs: ["class"],
-            values: ["twitter"]
-          }
-        ],
-        desc: "A Twitter font icon is on the page"
-      },
-      {
-        func: "testDOMelemAttrApproxContent",
-        params: [
-          {
-            selector: "*",
-            attrs: ["class"],
-            values: ["digg"]
-          }
-        ],
-        desc: "A Digg font icon is on the page"
-      },
-      {
-        func: "testDOMelemAttrApproxContent",
-        params: [
-          {
-            selector: "*",
-            attrs: ["class"],
-            values: ["facebook"]
-          }
-        ],
-        desc: "A Facebook font icon is on the page"
-      },
-      {
-        func: "testDOMelemAttrApproxContent",
-        params: [
-          {
-            selector: "*",
-            attrs: ["class"],
-            values: ["google"]
-          }
-        ],
-        desc: "A Google+ font icon is on the page"
+        desc: "The browser knows the image's media queries using sizes."
       }
     ]
   }

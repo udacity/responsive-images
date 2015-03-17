@@ -8,8 +8,13 @@ module.exports = function(grunt) {
           newFilesOnly: true,
           sizes: [
             {
+              width: 640,
+              suffix: "_640w",
+              quality: 100
+            },
+            {
               width: 1280,
-              suffix: "_1x",
+              suffix: "_1280w",
               quality: 100
             }
           ]
@@ -21,8 +26,8 @@ module.exports = function(grunt) {
         */
         files: [{
           expand: true,
-          src: ['*.{gif,jpg,png}'],
-          cwd: 'images_src/',
+          src: ['Coffee.{gif,jpg,png}'],
+          cwd: 'images/',
           dest: 'images/'
         }]
       }
