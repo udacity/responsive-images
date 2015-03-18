@@ -5,13 +5,14 @@ var suites = [
     tests: [
       {
         func: "testDOMelemCount",
+        repeat: true,
         params: [
           {
             selector: "img.dpi",
             count: 1
           }
         ],
-        desc: "Den Haag skyline image is on the page."
+        desc: "Den Haag skyline image (with class 'dpi') is on the page."
       },
       {
         func: "testDOMelemAttrContent",
@@ -31,13 +32,14 @@ var suites = [
       },
       {
         func: "testDOMelemCount",
+        repeat: true,
         params: [
           {
             selector: "img.w",
             count: 1
           }
         ],
-        desc: "The Australia image is on the page."
+        desc: "The Australia image (with class 'w') is on the page."
       },
       {
         func: "testDOMelemAttrContent",
@@ -51,7 +53,7 @@ var suites = [
             ]
           }
         ],
-        desc: "Australia reacts to screen width"
+        desc: "Australia reacts to screen width."
       }
     ]
   }

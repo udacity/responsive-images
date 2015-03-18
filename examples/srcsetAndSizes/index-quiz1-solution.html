@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="description" content="Udacity Responsive Images course project" />
+<meta name="description" content="Udacity Responsive Images course project" />
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta charset="utf-8">
   <meta itemprop="image" content="images/icon.png">
@@ -39,24 +38,28 @@
     }
   </style>
 </head>
-
 <body>
   <h1 class="center">Instructions</h1>
   <p><code class="code-style">srcset</code> is super useful. This quiz is here to help you practice giving the browser the ability to decide which image it should download based on its device pixel ratio and width.</p>
 
-  <p>Don't forget to test all of your changes with DevTools!</p>
-
   <h1 class="center"><code class="code-style">srcset</code> Using DPI</h1>
   <p>Den Haag's skyline looks like it's ready for a retina display. Help the browser determine the right image to download using <code class="code-style">srcset</code>. It should download <code class="code-style">Den_Haag_2x.jpg</code> if it is a 2x display and <code class="code-style">Den_Haag_1x.jpg</code> if it is a 1x display.</p>
 
-  <h2><code>srcset</code> Using DPI</h2>
+  <p>Make your changes using Chrome DevTools!</p>
+
   <figure>
-    <img class="dpi" src="images/Den_Haag_2x.jpg" srcset="images/Den_Haag_2x.jpg 2x, images/Den_Haag_1x.jpg 1x" alt="Den Haag Skyline">
+    <img  class="dpi"
+          src="images/Den_Haag_2x.jpg"
+          srcset="images/Den_Haag_2x.jpg 2x, images/Den_Haag_1x.jpg 1x"
+          alt="Den Haag Skyline">
     <figcaption>Source: Cameron Pittman</figcaption>
   </figure>
 
   <h2 class="center"><code class="code-style">srcset</code> Using Image Width</h2>
-  <p>Australia looks like it's ready for tablet and desktop, but it's probably too wide for mobile. Fix that with <code class="code-style">srcset</code>. Tell the browser that <code class="code-style">Australia_1280w.jpg</code> is 1280px wide and <code class="code-style">Australia_640w.jpg</code> is 640px wide so that it can choose the best one to download.</p>
+  <p>Australia looks like it's ready for tablet and desktop, but it's probably too wide for mobile. Fix that with <code class="code-style">srcset</code>. Tell the browser that <code class="code-style">Australia_1280w.jpg</code> is 1280px wide and <code class="code-style">Australia_640w.jpg</code> is 640px wide so that the browser can choose the best one to download.</p>
+
+  <p>Make your changes using Chrome DevTools!</p>
+
   <figure>
     <img  class="w"
           src="images/Australia_1280w.jpg"
