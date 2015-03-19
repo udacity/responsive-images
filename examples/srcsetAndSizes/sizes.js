@@ -12,7 +12,7 @@ var suites = [
             count: 1
           }
         ],
-        desc: "Coffee image is on the page."
+        desc: "Coffee image (with class 'w') is on the page."
       },
       {
         func: "testDOMelemAttrContent",

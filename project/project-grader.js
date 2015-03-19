@@ -16,6 +16,7 @@ var suites = [
       },
       {
         func: "testDOMelemCSS",
+        repeat: true,
         params: [
           {
             selector: "article",
