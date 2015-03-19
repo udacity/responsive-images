@@ -14,8 +14,14 @@
     body {
       font-family: 'Slabo 27px', serif;
     }
+    img.udacity {
+      width: 2em;
+      margin-bottom: -15px;
+      margin-left: -8px;
+    }
     img {
       width: 100vw;
+      max-width: 100%;
     }
     p {
       font-size: 1.25em;
@@ -55,7 +61,9 @@
   </style>
 </head>
 <body>
-  <h1>Instructions</h1>
+  <p><img class="udacity" src="../../images/udacity_logo.svg" alt="Udacity Logo"><a href="https://www.udacity.com/course/viewer#!/c-ud882/l-3574748851/e-3989648602/m-3958338728" target="_blank">Responsive Images</a> quiz by <a href="http://twitter.com/cwpittman" target="_blank">Cameron Pittman</a></p>
+
+  <h1 class="center">Instructions</h1>
   <p>Taking advantage of <code class="code-style">sizes</code> alongside <code class="code-style">srcset</code> gives you a very powerful combination for responsive images. This quiz is here to help you practice giving the browser the ability to decide which image it should download based on media queries and image width.</p>
 
   <h1 class="center"><code class="code-style">sizes</code> and <code class="code-style">srcset</code></h1>
@@ -63,7 +71,7 @@
 
   <p>For this quiz, I want you to tell the browser to download that it has the option of using <code class="code-style">Coffee_1280w.jpg</code> and <code class="code-style">Coffee_640w.jpg</code>, which have widths of 1280px and 640px respectively. Tell the browser that the image will display at 50vw if the page is smaller than 960px wide, otherwise the image displays at 100vw.</p>
 
-  <p>Don't forget to test all of your changes with DevTools!</p>
+  <p>Make your changes with DevTools!</p>
 
   <figure>
     <img  class="w"
