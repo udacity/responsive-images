@@ -54,6 +54,16 @@ var suites = [
         desc: "smiley_face.png is gone"
       },
       {
+        func: "testMetaTagContent",
+        params: [
+          {
+            attr: "charset",
+            value: "utf-8"
+          }
+        ],
+        desc: "&lt;meta&gt; has charset set to utf-8"
+      },
+      {
         func: "testFindStringInDocument",
         params: [
           {
@@ -129,16 +139,6 @@ var suites = [
           }
         ],
         desc: "Smiley face is unicode"
-      },
-      {
-        func: "testMetaTagContent",
-        params: [
-          {
-            attr: "charset",
-            value: "utf-8"
-          }
-        ],
-        desc: "&lt;meta&gt; has charset set to utf-8"
       },
       {
         func: "testDOMelemDoesntExist",
