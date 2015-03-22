@@ -48,7 +48,7 @@ var suites = [
         func: "testDOMelemDoesntExist",
         params: [
           {
-            selector: "img[src='images/smiley_face.png']"
+            selector: "img[src='images_src/fixed/smiley_face.png']"
           }
         ],
         desc: "smiley_face.png is gone"
@@ -144,7 +144,7 @@ var suites = [
         func: "testDOMelemDoesntExist",
         params: [
           {
-            selector: "img[src='images/flourish.png']" // looking for one of these
+            selector: "img[src='images_src/fixed/flourish.png']" // looking for one of these
           }
         ],
         desc: "Flourish is gone"
