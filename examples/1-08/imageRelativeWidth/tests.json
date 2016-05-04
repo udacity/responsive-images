@@ -1,0 +1,44 @@
+[{
+  "name": "calc() Quiz",
+  "code": "myrelativesarewide",
+  "tests": [
+    {
+      "description": "There are three images",
+      "definition": {
+        "nodes": "img",
+        "get": "count",
+        "equals": 3
+      }
+    },
+    {
+      "description": "There are 10px between #img1 and #img2",
+      "definition": {
+        "waitForEvent": "ud-btwn-1-2",
+        "exists": true
+      }
+    },
+    {
+      "description": "There are 10px between #img2 and #img3",
+      "definition": {
+        "waitForEvent": "ud-btwn-2-3",
+        "exists": true
+      }
+    },
+    {
+      "description": "Left image is flush against viewport",
+      "definition": {
+        "nodes": "#img1",
+        "absolutePosition": "left",
+        "equals": 0
+      }
+    },
+    {
+      "description": "Right image is flush against viewport",
+      "definition": {
+        "nodes": "#img3",
+        "absolutePosition": "right",
+        "equals": "max"
+      }
+    }
+  ]
+}]
