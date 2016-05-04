@@ -11,8 +11,6 @@
     var totalBytes = 0;
     var elemsWithBytes = [];  
     var imgSelectors = [
-      // ':not(picture) > [src]:not(script)',
-      // '[href]:not(a):not(link)',
       'img:not([src="images_src/fixed/smiley_face.png"])'
     ];
 
@@ -66,8 +64,6 @@
     elemsWithBytes.forEach(function(elem) {
       try {
         var url = elem.currentSrc || elem.src || elem.href;
-        // TODO: smarter way of handling CORS
-        // this just checks the host
         if (url.search(location.host) > -1) { sendreq(url); }
       } catch (e) {
         throw new Error("Download failed: " + url);
