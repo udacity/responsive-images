@@ -2,7 +2,7 @@
   var tests = [];
 
   var test1 = function() {
-    var isCorrect = false;
+    var _isCorrect = false;
 
     var elem1 = document.querySelector('#img1');
     var rect = elem1.getBoundingClientRect();
@@ -13,15 +13,15 @@
     var e2LeftSide = rect.left;
 
     if (e2LeftSide - e1RightSide === 10) {
-      isCorrect = true;
+      _isCorrect = true;
+      window.dispatchEvent(new CustomEvent('ud-btwn-1-2', {'detail': 'passed'}));
     }
 
-    window.dispatchEvent(new CustomEvent('ud-btwn-1-2', {'detail': 'passed'}));
-    return isCorrect;
+    return _isCorrect;
   };
 
   var test2 = function() {
-    var isCorrect = false;
+    var _isCorrect = false;
 
     var elem2 = document.querySelector('#img2');
     var rect = elem2.getBoundingClientRect();
@@ -32,11 +32,11 @@
     var e3LeftSide = rect.left;
 
     if (e3LeftSide - e2RightSide === 10) {
-      isCorrect = true;
+      _isCorrect = true;
+      window.dispatchEvent(new CustomEvent('ud-btwn-2-3', {'detail': 'passed'}));
     }
 
-    window.dispatchEvent(new CustomEvent('ud-btwn-2-3', {'detail': 'passed'}));
-    return isCorrect;
+    return _isCorrect;
   };
 
   tests.push(test1);
