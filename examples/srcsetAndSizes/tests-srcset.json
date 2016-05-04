@@ -1,0 +1,46 @@
+[{
+  "name": "srcset",
+  "code": "setupyoursources",
+  "tests": [
+    {
+      "description": "Den Haag skyline image (with class 'dpi') is on the page.",
+      "definition": {
+        "nodes": "img.dpi",
+        "get": "count",
+        "equals": 1
+      }
+    },
+    {
+      "description": "Den Haag skyline reacts to device pixel ratio.",
+      "definition": {
+        "nodes": "img.dpi",
+        "attribute": "srcset",
+        "equals": [
+          "images/Den_Haag_2x.jpg 2x, images/Den_Haag_1x.jpg 1x",
+          "images/Den_Haag_1x.jpg 1x, images/Den_Haag_2x.jpg 2x",
+          "images/Den_Haag_2x.jpg 2x, images/Den_Haag_1x.jpg",
+          "images/Den_Haag_1x.jpg, images/Den_Haag_2x.jpg 2x"
+        ]
+      }
+    },
+    {
+      "description": "The Australia image (with class 'w') is on the page.",
+      "definition": {
+        "nodes": "img.w",
+        "get": "count",
+        "equals": 1
+      }
+    },
+    {
+      "description": "Australia reacts to screen width.",
+      "definition": {
+        "nodes": "img.w",
+        "attribute": "srcset",
+        "equals": [
+          "images/Australia_1280w.jpg 1280w, images/Australia_640w.jpg 640w",
+          "images/Australia_640w.jpg 640w, images/Australia_1280w.jpg 1280w"
+        ]
+      }
+    }
+  ]
+}]
