@@ -207,10 +207,8 @@
     {
       "description": "&lt;img&gt; is last child of all &lt;picture&gt;s",
       "definition": {
-        "nodes": "picture",
-        "children": "img",
-        "get": "childPosition",
-        "equals": 2
+        "nodes": "picture > img:last-child",
+        "exists": "true",
       }
     },
     {
