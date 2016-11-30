@@ -1,0 +1,225 @@
+[{
+  "name": "Project Part 1",
+  "code": "ready!set!responsiveimages!",
+  "tests": [
+    {
+      "description": "&lt;img&gt;s have max-widths of 100%",
+      "definition": {
+        "nodes": "article img",
+        "limit": "some",
+        "cssProperty": "maxWidth",
+        "equals": "100%"
+      }
+    },
+    {
+      "description": "&lt;article&gt;s are reasonably wide (600-1200px)",
+      "definition": {
+        "nodes": "article",
+        "cssProperty": "width",
+        "isInRange": {
+          "lower": 600,
+          "upper": 1200
+        }
+      }
+    },
+    {
+      "description": "Page bytes are under 1.5MB (refresh to update)",
+      "definition": {
+        "waitForEvent": "ud-bytes-in-range",
+        "exists": true
+      }
+    }
+  ]
+},
+{
+  "name": "Project Part 2",
+  "code": "markupisprettyawesome",
+  "tests": [
+    {
+      "description": "smiley_face.png is gone",
+      "definition": {
+        "nodes": "img[src=\"images_src/fixed/smiley_face.png\"]",
+        "exists": false
+      }
+    },
+    {
+      "description": "&lt;meta&gt; has charset set to utf-8",
+      "definition": {
+        "nodes": "meta",
+        "limit": 1,
+        "attribute": "charset",
+        "equals": "utf-8"
+      }
+    },
+    {
+      "description": "Smiley face is unicode",
+      "definition": {
+        "nodes": "p",
+        "get": "innerHTML",
+        "limit": "some",
+        "hasSubstring": [
+          "☺", "&#9786;",
+          "☹", "&#2639;",
+          "☻", "&#9787;",
+          "😀", "&#128512;",
+          "😁", "&#128513;",
+          "😂", "&#128514;",
+          "😃", "&#128515;",
+          "😄", "&#128516;",
+          "😅", "&#128517;",
+          "😆", "&#128518;",
+          "😇", "&#128519;",
+          "😈", "&#128520;",
+          "😉", "&#128521;",
+          "😊", "&#128522;",
+          "😋", "&#128523;",
+          "😌", "&#128524;",
+          "😍", "&#128525;",
+          "😎", "&#128526;",
+          "😏", "&#128527;",
+          "😐", "&#128528;",
+          "😑", "&#128529;",
+          "😒", "&#128530;",
+          "😓", "&#128531;",
+          "😔", "&#128532;",
+          "😕", "&#128533;",
+          "😖", "&#128534;",
+          "😗", "&#128535;",
+          "😘", "&#128536;",
+          "😙", "&#128537;",
+          "😚", "&#128538;",
+          "😛", "&#128539;",
+          "😜", "&#128540;",
+          "😝", "&#128541;",
+          "😞", "&#128542;",
+          "😟", "&#128543;",
+          "😠", "&#128544;",
+          "😡", "&#128545;",
+          "😢", "&#128546;",
+          "😣", "&#128547;",
+          "😤", "&#128548;",
+          "😥", "&#128549;",
+          "😦", "&#128550;",
+          "😧", "&#128551;",
+          "😨", "&#128552;",
+          "😩", "&#128553;",
+          "😪", "&#128554;",
+          "😫", "&#128555;",
+          "😬", "&#128556;",
+          "😭", "&#128557;",
+          "😮", "&#128558;",
+          "😯", "&#128559;",
+          "😰", "&#128560;",
+          "😱", "&#128561;",
+          "😲", "&#128562;",
+          "😳", "&#128563;",
+          "😴", "&#128564;",
+          "😵", "&#128565;",
+          "😶", "&#128566;",
+          "😷", "&#128567;",
+          "😸", "&#128568;",
+          "😹", "&#128569;",
+          "😺", "&#128570;",
+          "😻", "&#128571;",
+          "😼", "&#128572;",
+          "😽", "&#128573;",
+          "😾", "&#128574;",
+          "😿", "&#128575;",
+          "🙀", "&#128576;"
+        ]
+      }
+    },
+    {
+      "description": "Flourish is gone",
+      "definition": {
+        "nodes": "img[src=\"images_src/fixed/flourish.png\"]",
+        "exists": false
+      }
+    },
+    {
+      "description": "A Twitter font icon is on the page",
+      "definition": {
+        "nodes": "a",
+        "limit": 1,
+        "attribute": "class",
+        "hasSubstring": "twitter"
+      }
+    },
+    {
+      "description": "A Digg font icon is on the page",
+      "definition": {
+        "nodes": "a",
+        "limit": 1,
+        "attribute": "class",
+        "hasSubstring": "digg"
+      }
+    },
+    {
+      "description": "A Facebook font icon is on the page",
+      "definition": {
+        "nodes": "a",
+        "limit": 1,
+        "attribute": "class",
+        "hasSubstring": "facebook"
+      }
+    },
+    {
+      "description": "A Google+ font icon is on the page",
+      "definition": {
+        "nodes": "a",
+        "limit": 1,
+        "attribute": "class",
+        "hasSubstring": "google"
+      }
+    }
+  ]
+},
+{
+  "name": "Project Part 3",
+  "code": "allthepictures,allthetime",
+  "tests": [
+    {
+      "description": "There are 8 &lt;picture&gt;s on the page",
+      "definition": {
+        "nodes": "picture",
+        "get": "count",
+        "equals": 8
+      }
+    },
+    {
+      "description": "There are 2 &lt;sources&gt;s per &lt;picture&gt;",
+      "definition": {
+        "nodes": "picture",
+        "children": "source",
+        "get": "count",
+        "equals": 2
+      }
+    },
+    {
+      "description": "There is 1 &lt;img&gt; per &lt;picture&gt;",
+      "definition": {
+        "nodes": "picture",
+        "children": "img",
+        "get": "count",
+        "equals": 1
+      }
+    },
+    {
+      "description": "&lt;img&gt; is last child of all &lt;picture&gt;s",
+      "definition": {
+        "nodes": "picture",
+        "children": "img",
+        "get": "childPosition",
+        "equals": 2
+      }
+    },
+    {
+      "description": "Every &lt;img&gt; has an alt attribute",
+      "definition": {
+        "nodes": "img",
+        "attribute": "alt",
+        "hasSubstring": ".+"
+      }
+    }
+  ]
+}]
