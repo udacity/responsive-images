@@ -1,6 +1,6 @@
 (function() {
   function getNodes(selector) {
-    return Array.prototype.slice.apply(document.querySelectorAll(selector))
+    return Array.prototype.slice.apply(document.querySelectorAll(selector));
   }
 
   var collectPageSize = function() {
@@ -9,7 +9,7 @@
     var max = 1500000;
     var min = 0;
     var totalBytes = 0;
-    var elemsWithBytes = [];  
+    var elemsWithBytes = [];
     var imgSelectors = [
       'img:not([src="images_src/fixed/smiley_face.png"])'
     ];
@@ -18,7 +18,7 @@
       var elems = getNodes(img);
       elemsWithBytes = elemsWithBytes.concat(elems);
     });
-    
+
     // get picture elems current srcs too
     var pictures = getNodes('picture > img');
     elemsWithBytes = elemsWithBytes.concat(pictures);
@@ -45,31 +45,32 @@
       }
     }
 
-    function sendreq(url, evt) {  
+    function sendreq(url, evt) {
       // TODO: better error handling
       try {
-        var req = new XMLHttpRequest();     
+        var req = new XMLHttpRequest();
         req.open('GET', url, true);
         req.onloadend = fireLoadEvent;
         req.onerror = function() {
           console.log('something?');
-        }
+        };
         req.send();
       } catch (e) {
         console.log(e);
-        throw new Error("If you're seeing this error, you might need to serve the site through localhost.")
+        throw new Error("If you're seeing this error, you might need to serve the site through localhost.");
       }
     }
 
     elemsWithBytes.forEach(function(elem) {
+      var url;
       try {
-        var url = elem.currentSrc || elem.src || elem.href;
+         url = elem.currentSrc || elem.src || elem.href;
         if (url.search(location.host) > -1) { sendreq(url); }
       } catch (e) {
         throw new Error("Download failed: " + url);
       }
     });
-  }
+  };
 
   collectPageSize();
 })();
