@@ -7,6 +7,8 @@ Output_zip () {
   rm -rf $1
 }
 
+find project/lesson{2,3,4}/*/ -maxdepth 0 -exec cp project/project-grader.js{,on} {} \;
+
 pushd project/lesson2/
 Output_zip Project-Part-1-Start start
 popd
@@ -27,3 +29,6 @@ popd
 mv project/lesson4/Project-Part-2-Solution.zip downloads/RI-Project-Part-2-Solution.zip
 mv project/lesson4/Project-Part-3-Start.zip downloads/RI-Project-Part-3-Start.zip
 mv project/lesson4/Project-Part-3-Solution.zip downloads/RI-Project-Part-3-Solution.zip
+
+find project/lesson{2,3,4}/*/project-grader.js{,on} -maxdepth 0 -exec rm {} \;
+
