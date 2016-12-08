@@ -48,7 +48,10 @@
         "nodes": "meta",
         "limit": 1,
         "attribute": "charset",
-        "equals": "utf-8"
+        "equals": [
+          "utf-8",
+          "UTF-8"
+        ]
       }
     },
     {
