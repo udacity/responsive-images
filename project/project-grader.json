@@ -137,7 +137,7 @@
       }
     },
     {
-      "description": "A Twitter font icon is on the page",
+      "description": "An anchor link using the Twitter Zocial icon is on the page",
       "definition": {
         "nodes": "a",
         "limit": 1,
@@ -146,7 +146,7 @@
       }
     },
     {
-      "description": "A Digg font icon is on the page",
+      "description": "An anchor link using the Digg Zocial icon is on the page",
       "definition": {
         "nodes": "a",
         "limit": 1,
@@ -155,7 +155,7 @@
       }
     },
     {
-      "description": "A Facebook font icon is on the page",
+      "description": "An anchor link using the Facebook Zocial icon is on the page",
       "definition": {
         "nodes": "a",
         "limit": 1,
@@ -164,7 +164,7 @@
       }
     },
     {
-      "description": "A Google+ font icon is on the page",
+      "description": "An anchor link using the Google+ Zocial icon is on the page",
       "definition": {
         "nodes": "a",
         "limit": 1,
