@@ -52,12 +52,12 @@
         req.open('GET', url, true);
         req.onloadend = fireLoadEvent;
         req.onerror = function() {
-          console.log('something?');
+          console.log("If you're seeing this error, you might need to serve the site through http://localhost.");
         }
         req.send();
       } catch (e) {
         console.log(e);
-        throw new Error("If you're seeing this error, you might need to serve the site through localhost.")
+        throw new Error("If you're seeing this error, you might need to serve the site through http://localhost.")
       }
     }
 
